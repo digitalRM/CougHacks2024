@@ -38,7 +38,7 @@ The fourth and final idea was the one we settled on: "Accessible Articles." We t
 
 ## Final Product
 
-![Final](https://github.com/digitalRM/CougHacks2024-private/assets/70782025/fa46a89c-c4e9-4f05-a1b5-351f21746b4a)
+![gif](https://github.com/digitalRM/CougHacks2024/assets/70782025/189093b6-85ba-4930-afb3-a3a3ed381035)
 
 # Running Locally
 To get a local copy up and running, follow these steps:
