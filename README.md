@@ -2,7 +2,7 @@
 
 ## By Ruslan Mukhamedvaleev, Rachel Chu, Wanhao Zhang, and Murugan Sakthivel 
 
-![CougHacks](https://github.com/digitalRM/CougHacks2024-private/assets/70782025/6124454c-317a-466f-a35e-164b7146e6a3)
+![CougHacks](https://github.com/digitalRM/CougHacks2024/assets/70782025/16117498-7ee7-4f07-9f4a-e52033545fc5)
 
 ## The Prompt
 
@@ -29,12 +29,12 @@ For our third idea, we briefly considered a to-do list app (haha), but thought t
 The fourth and final idea was the one we settled on: "Accessible Articles." We thought about issues that we shared in common and realized that half of us had trouble reading things online due to certain preconditions that made it more difficult to read text. Thus, the idea to create a tool to help others like us was born!
 
 
-![IMG_6621](https://github.com/digitalRM/CougHacks2024-private/assets/70782025/c54ac80c-e7af-4904-96b9-000ab4757169)
+![IMG_6621](https://github.com/digitalRM/CougHacks2024/assets/70782025/f08e0556-824b-41f9-8f10-b913d0183cf0)
 
 
 ## Building 
 
-![CougHacks](https://github.com/digitalRM/CougHacks2024-private/assets/70782025/01a8ac79-57e0-44ff-9be6-0d01a55de935)
+![CougHacks (1)](https://github.com/digitalRM/CougHacks2024/assets/70782025/4743ae6e-0122-4afb-844f-28273321ec18)
 
 ## Final Product
 
