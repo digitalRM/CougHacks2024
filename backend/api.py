@@ -8,7 +8,7 @@ Usage::
 """
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.parse import urlparse, parse_qs
-from newspaper import Article
+import newspaper
 import json
 import openai
 
@@ -65,19 +65,18 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             self.wfile.write(b'Missing "url" parameter in the query string')
 
     def scrape_article(self, url):
-        # create an article object with the provided url
-        article = Article(url, language="en")  # assuming english language for simplicity
-
-        # download and parse the article
-        article.download()
-        article.parse()
+        # create and parse an article object with the provided url
+        # Newspaper4k helper auto-downloads and parses
+        article = newspaper.article(url)
 
         # create a dictionary containing article information
         article_info = {
             "Title": article.title,
+            "Keywords": article.keywords,
+            "Photo": article.top_image,
             "Author": article.authors,
             "Text": article.text,
-            "Summary": generate_summary(article.text, max_tokens=800)
+            "Summary": article.summary
         }
 
         return article_info

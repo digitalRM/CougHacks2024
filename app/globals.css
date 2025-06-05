@@ -1,11 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0; /* Remove default padding around the swatch */
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none; /* Remove border from the swatch itself */
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -84,11 +104,11 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
-  --font-1: 'Inter', sans-serif;
+  --font-1: "Inter", sans-serif;
   --font-2: "Inclusive Sans", sans-serif;
-  --font-3: 'Comic Sans MS', sans-serif;
-  --font-4: 'Roboto Mono', monospace;
-  --font-5: 'Merriweather', serif;
+  --font-3: "Comic Sans MS", sans-serif;
+  --font-4: "Roboto Mono", monospace;
+  --font-5: "Merriweather", serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -103,7 +123,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
-  text-overflow: '';
+  text-overflow: "";
 }
 
 .font-1 {
@@ -132,8 +152,14 @@ select {
   }
 }
 
-.color-bg{
-  background-image: radial-gradient(at 2% 37%,#3a8bfd 0,transparent 0),radial-gradient(at 97% 21%,#cd72fe00 0,transparent 50%),radial-gradient(at 52% 99%,#fd3aafb0 0,transparent 50%),radial-gradient(at 10% 29%,#855afc 0,transparent 50%),radial-gradient(at 97% 96%,#b395e4 0,transparent 50%),radial-gradient(at 33% 50%,#ffffff 0,transparent 50%),radial-gradient(at 79% 53%,#ffffff00 0,transparent 50%)
+.color-bg {
+  background-image: radial-gradient(at 2% 37%, #3a8bfd 0, transparent 0),
+    radial-gradient(at 97% 21%, #cd72fe00 0, transparent 50%),
+    radial-gradient(at 52% 99%, #fd3aafb0 0, transparent 50%),
+    radial-gradient(at 10% 29%, #855afc 0, transparent 50%),
+    radial-gradient(at 97% 96%, #b395e4 0, transparent 50%),
+    radial-gradient(at 33% 50%, #ffffff 0, transparent 50%),
+    radial-gradient(at 79% 53%, #ffffff00 0, transparent 50%);
 }
 
 input::placeholder {
@@ -141,28 +167,22 @@ input::placeholder {
   opacity: 0.5;
 }
 
-
-
 .md-h1 {
-  font-size: 2.0rem;
+  font-size: 2rem;
   line-height: 2.3rem;
-  font-weight: 700;;
+  font-weight: 700;
   margin-top: 18px;
   margin-bottom: 18px;
   letter-spacing: -0.02em;
-
-  
 }
 
 .md-h1-spec {
-  font-size: 2.0rem;
+  font-size: 2rem;
   line-height: 2.3rem;
-  font-weight: 700;;
+  font-weight: 600;
   margin-top: 18px;
   margin-bottom: 18px;
   letter-spacing: -0.02em;
-
-  
 }
 
 .md-h2 {
@@ -184,5 +204,3 @@ input::placeholder {
 .md-p {
   margin-bottom: 12px;
 }
-
- 
