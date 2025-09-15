@@ -7,6 +7,7 @@ export default function CustomizeFormat({
   fontSize,
   setFontSize,
   handleFontChange,
+  randomizeFormat,
 }) {
   return (
     <div className="flex flex-col sm:flex-row gap-3 w-full">
@@ -119,6 +120,21 @@ export default function CustomizeFormat({
             onChange={(e) => setTextColor(e.target.value)}
           />
         </div>
+      </div>
+
+      <div className="flex items-end w-full">
+        <button
+          type="button"
+          onClick={randomizeFormat}
+          style={{
+            color: textColor,
+            borderColor: textColor + "40",
+            backgroundColor: backgroundColor,
+          }}
+          className="w-full border h-full rounded-2xl px-3 py-2 text-sm font-semibold hover:opacity-80"
+        >
+          Randomize
+        </button>
       </div>
     </div>
   );

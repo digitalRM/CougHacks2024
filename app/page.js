@@ -26,6 +26,28 @@ export default function Home() {
   const [isData, setIsData] = useState(false);
   const [error, setError] = useState(null);
 
+  const randomizeFormat = () => {
+    const colorPairs = [
+      { bg: "#FFFFFF", text: "#111111" },
+      { bg: "#111111", text: "#FAFAFA" },
+      { bg: "#0F172A", text: "#F8FAFC" },
+      { bg: "#F3F4F6", text: "#111827" },
+      { bg: "#ECFDF5", text: "#064E3B" },
+      { bg: "#FEF3C7", text: "#111827" },
+      { bg: "#FFF1F2", text: "#881337" },
+      { bg: "#1F2937", text: "#F9FAFB" },
+      { bg: "#0B1020", text: "#F1F5F9" },
+    ];
+
+    const pair = colorPairs[Math.floor(Math.random() * colorPairs.length)];
+    setbackgroundColor(pair.bg);
+    setTextColor(pair.text);
+
+    const randomFontValue =
+      fontOptions[Math.floor(Math.random() * fontOptions.length)].value;
+    setFontFamily(String(randomFontValue));
+  };
+
   const fetchAPI = async () => {
     setIsData(false);
     setIsLoading(true);
@@ -76,6 +98,7 @@ export default function Home() {
         handleFontChange={handleFontChange}
         fontOptions={fontOptions}
         setError={setError}
+        randomizeFormat={randomizeFormat}
       />
       <Article
         data={data}
